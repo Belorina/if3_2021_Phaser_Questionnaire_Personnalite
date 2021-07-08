@@ -1,0 +1,14 @@
+{
+    "questions": [
+        {
+            "title": "Quel célèbre dictateur dirigea l’URSS \ndu milieu des années 1920 à 1953 ?",
+            "answers": ["Lenine", "Staline", "Molotov"],
+            "correctAnswer": 1
+        },
+        {
+            "title": "question2",
+            "answers": ["r1", "r2", "r3"],
+            "correctAnswer": 1
+        }
+  ]
+}
