@@ -1,0 +1,155 @@
+{
+    "questions": [
+        {
+            "title": "Quelle importance accordez-vous \n au succès ?",
+            "answers": ["Une importance moyenne.", "Une très grande importance", "Le succès ne me préoccupe \n pas beaucoup"],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Vous est-il déjà arrivé de prendre des jours de congé parce que vousétiez stressé(e) ?",
+            "answers": ["Une ou deux fois.", "Plus de deux fois.", "Jamais."],
+            "goodAnswerIndex": 1
+        },
+        {
+            "title": "Vous  considère-t-on  comme  une  personne  sachant  conserver  sonsang froid en période de crise ?",
+            "answers": ["Parfois,  mais  ceux  qui  arrivent  à  garder  la  tête  froide  enpériode de crise n’ont généralement pas saisi la gravité de lasituation.", "Pas vraiment.", "Oui, je pense être à juste titre perçu(e) ainsi."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Parmi  les  propositions  suivantes,  laquelle  est  la  plus  à  même  devous  détendre  et  de  réduire  votre  stress  après  une  journéeparticulièrement éprouvante ?",
+            "answers": ["Quelques heures de sommeil dans ma chaise longue préférée.", "Une bonne rasade de whiskey ou d’un autre alcool.", "Une barre chocolatée."],
+            "goodAnswerIndex": 2
+        },
+        {
+            "title": "Comment réagissez-vous sous la pression ?8© Groupe EyrollesParmi  les  propositions  suivantes,  laquelle  est  la  plus  à  même  devous  détendre  et  de  réduire  votre  stress  après  une  journéeparticulièrement éprouvante ?a) Quelques heures de sommeil dans ma chaise longue préférée.b) Une bonne rasade de whiskey ou d’un autre alcool.c) Une barre chocolatée.Les délais vous stimulent-ils ?",
+            "answers": ["Non, mais les délais sont un mal nécessaire avec lequel il fautapprendre à vivre.", "Non, les délais ont tendance à me stresser et je préfère tra-vailler à mon rythme.", "Oui, je pense que je travaille mieux quand je suis sous pression."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Pensez-vous que la vie actuelle génère plus de stress qu’il y a 40 ans ?",
+            "answers": ["Peut-être.", "Oui.", "Non."],
+            "goodAnswerIndex": 1
+        },
+        {
+            "title": "Votre  neveu  vous  demande  de  garder  ses  trois  enfants  un  peuturbulents  pendant  le  week-end  en  raison  d’une  crise  familiale.Comment envisagez-vous cette situation ?",
+            "answers": ["Cela m’inquiète terriblement.", "L’idée de garder ces trois enfants me terrifie à un point tel queje chercherai probablement un moyen d’y échapper.", "C’est un nouveau défi que je relèverai avec plaisir."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Le stress vous a-t-il déjà conduit(e) à endommager des choses ?",
+            "answers": ["Non, je n’ai jamais rien fait de tel mais il m’est déjà arrivé deraccrocher brutalement le téléphone.", "Oui.", "Non."],
+            "goodAnswerIndex": 2
+        },
+        {
+            "title": "Vous arrive-t-il d’être ennuyé(e) par des petits riens ?",
+            "answers": ["Oui, parfois.", "Assez souvent.", "Rarement voire jamais."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Que ressentiriez-vous si vous deviez vous familiariser avec une nou-velle technologie ?",
+            "answers": ["Rien de particulier. Si je devais me familiariser avec un nouveloutil de travail pour des raisons professionnelles, je m’adapte-rais sans difficulté.", "Cela m’inquièterait un peu.", "J’aime apprendre des choses nouvelles, je trouve cela très inté-ressant."],
+            "goodAnswerIndex": 0 
+            
+        },
+        {
+            "title": "Quel est, à votre avis, l’objectif premier des week-ends ?",
+            "answers": ["La possibilité de passer du temps avec ses amis et sa famille.", "La  possibilité  de  ne  pas  travailler  aussi  dur  que  durant  lasemaine même si je ne parviens jamais à me détendre complè-tement.", "La possibilité de se détendre et d’oublier le travail."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Que ressentez-vous lorsque vous effectuez des travaux chez vous ?",
+            "answers": ["Cela ne me dérange pas particulièrement car c’est nécessaire. ", "Je suis un peu tendu(e) durant les travaux car cela perturbema routine.", "Je suis très content(e) et parfois excité(e) selon la nature destravaux effectués."],
+            "goodAnswerIndex": 1
+        },
+        {
+            "title": "Avez-vous des amis de confiance vers lesquels vous tourner en casde difficulté ?",
+            "answers": ["Peut-être.", "Pas vraiment.", "Oui."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Avez-vous  l’impression  que  nous  vivons  dans  un  monde  encoreplus compétitif qu’auparavant ?",
+            "answers": ["Le monde moderne est peut-être un peu plus compétitif quecelui de nos parents ou grands-parents.", "Oui, j’en suis convaincu(e).", "Non, je pense que la compétition est restée la même."],
+            "goodAnswerIndex": 2
+        },
+        {
+            "title": "Vous arrive-t-il de discuter avec les autres de ce que vous ressentez ?",
+            "answers": ["Parfois.", "Rarement voire jamais.", "Assez souvent."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Pensez-vous qu’il soit nécessaire de toujours vous efforcer d’aller del’avant ? ",
+            "answers": ["Parfois.", "Oui, je pense que c’est la seule manière de réussir dans la vie.", "Non, la vie est bien trop courte."],
+            "goodAnswerIndex": 1
+        },
+        {
+            "title": "Travailler sur différents projets en même temps vous dérange-t-il ?",
+            "answers": ["Non.", "Oui, je préfère me concentrer sur une chose à la fois.", "Au contraire, je préfère cela. "],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Vous arrive-t-il de vous en vouloir ou d’être en colère après avoircommis  une  erreur  ou  si  les  choses  ne  se  déroulent  pas  commeprévu ?",
+            "answers": ["Parfois, comme la plupart des gens, je suppose.", "Probablement plus souvent que les autres.", "Probablement moins souvent que la plupart des gens."],
+            "goodAnswerIndex": 2
+        },
+        {
+            "title": "Avez-vous déjà suivi un traitement, ou pris des médicaments, contre le stress ?",
+            "answers": ["Parfois.", "Assez souvent.", "Jamais."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Votre santé a-t-elle déjà été affectée par la mort ou la maladie d’unêtre proche ?",
+            "answers": ["Non, mais cela pourrait arriver dans le futur, je ne sais pas.", "Oui.","Non, cela m’est arrivé et j’en ai beaucoup souffert comme toutun  chacun  mais  cela  n’a  jamais  eu  de  répercussions  sur  masanté."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Avez-vous déjà souffert du stress des examens ?",
+            "answers": ["Les examens me stressent un peu mais pas plus que la plupartdes gens.", "Oui.", "Non."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Que  pensez-vous  des  traitements  alternatifs  comme  l’acupuncturepour soigner le stress ?",
+            "answers": ["Je ne sais pas trop quoi en penser. J’y viendrais peut-être si lebesoin s’en fait sentir.", "Je n’envisagerai jamais un tel traitement.", "Cela peut être très bénéfique."],
+            "goodAnswerIndex": 1
+        },
+        {
+            "title": "Vous  arrive-t-il  d’être  stressé(e)  à  l’idée  d’accomplir  certaines  cor-vées ménagères comme la lessive ou la tonte de la pelouse ?",
+            "answers": ["Non cela ne me stresse pas même si ces tâches ne sont pasparticulièrement réjouissantes.", "Oui.", "Jamais."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Vous  est-t-il  facile  de  faire  le  vide  et  de  vous  détendre  complè-tement ?",
+            "answers": ["Cela dépend des moments.", "C’est quasiment voire carrément impossible.", "J’ai la chance de pouvoir assez facilement faire le vide et medétendre."],
+            "goodAnswerIndex": 2
+        },
+        {
+            "title": "Vous est-il souvent arrivé d’être sous pression et de n’arriver à com-battre ce stress qu’en vous immergeant dans le travail ?",
+            "answers": ["Parfois.", "Plus souvent que je ne le voudrais.", "Rarement voire jamais."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Vous êtes coincé(e) dans un embouteillage. Que ressentez-vous ?",
+            "answers": ["De la colère.", "De la frustration.", "De l’ennui."],
+            "goodAnswerIndex": 1
+        },
+        {
+            "title": "Ressentez-vous plus ou moins de pression avec l’âge ?",
+            "answers": ["À peu près pareil.", "Plus.", "Moins."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Que ressentiriez-vous si vous deviez déménager à nouveau ?",
+            "answers": [" J’aime assez ma maison actuelle mais cela pourrait présentercertains avantages.", "Je préfère éviter tous les tracas liés à un déménagement.", "Cela demande beaucoup de travail mais c’est généralement unévènement que l’on prend plaisir à planifier."],
+            "goodAnswerIndex": 2
+        },
+        {
+            "title": "Le stress a-t-il souvent eu des répercussions sur votre vie sexuelle ?",
+            "answers": ["Parfois.", "Relativement souvent.", "Jamais."],
+            "goodAnswerIndex": 0
+        },
+        {
+            "title": "Avez-vous souffert du stress après avoir arrêté de fumer ou de boiredu café ?",
+            "answers": ["Non, mis à part quelques crises de manque.", "Oui.", "Non."],
+            "goodAnswerIndex": 0
+        }
+  ]
+}
