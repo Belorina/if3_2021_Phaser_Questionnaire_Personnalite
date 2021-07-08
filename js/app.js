@@ -21,10 +21,9 @@ let answerNumber = 3;
 let questionImage;
 let playButtonImage;
 let currentQuestionIndex = 0;
-let starImage = [];
+
 let score = 0;
-let goodAnswerSound;
-let wrongAnswerSound;
+
 
 let welcomeImage, quizText, welcomeText, menuImage, restartImage;
 
@@ -57,12 +56,9 @@ function preload() {
     this.load.image('labelquestion', './assets/Sprites/label1.png');
     this.load.image('labelanswer', './assets/Sprites/label2.png');
     this.load.image('play', './assets/Sprites/play.png');
-    this.load.image('starOn', './assets/sprites/star.png');
+    
+    this.load.json('questions', './assets/data/MyQuestions.json');
 
-    this.load.json('questions', './assets/data/questions.json');
-
-    this.load.audio('goodSound', './assets/sound/good.wav')
-    this.load.audio('wrongSound', './assets/sound/wrong.wav')
 
     this.load.image('blackboard', './assets/sprites/blackboard.png');
     this.load.image('menu', './assets/sprites/menu.png');
@@ -125,33 +121,27 @@ function create() {
     playButtonImage.setScale(0.3);
     playButtonImage.setVisible(false); // playButtonImage.alpha = 0;
 
-    for (let i = 0; i < quizz.questions.length; i++) {
-        starImage[i] = this.add.image(30 + i * 60, 600, 'starOn');
-        starImage[i].setScale(0.2);
-        starImage[i].alpha = 0.5;
-        starImage[i].setVisible(false);
-    }
-    goodAnswerSound = this.sound.add('goodSound');
-    wrongAnswerSound = this.sound.add('wrongSound');
+    
+    
 }
 
 function update() { }
 
 function checkAnswer(answerIndex) {
     if (answerIndex == quizz.questions[currentQuestionIndex].goodAnswerIndex) {
-        goodAnswerSound.play();
-        starImage[currentQuestionIndex].alpha = 1;
+        
+        
         score++;
     }
     else {
-        wrongAnswerSound.play();
-        starImage[currentQuestionIndex].tint = 0xff0000;    // 0x a la place du # ! 
+        
+      
     }
     playButtonImage.setVisible(true);   // playButtonImage.alpha = 1;
     for (let i = 0; i < 3; i++) {
         answerImage[i].disableInteractive();
-        if (i == quizz.questions[currentQuestionIndex].goodAnswerIndex) answerText[i].setColor('#00ff00');
-        else answerText[i].setColor('#ff0000');
+        if (i == answerIndex) answerText[i].setColor('#00ff00');
+
     }
 }
 
@@ -183,12 +173,7 @@ function displayGameScreen() {
     for (let i = 0; i < quizz.questions[0].answers.length; i++) {
         answerImage[i].setVisible(true);
         answerText[i].setVisible(true);
-    }
-    for (let i = 0; i < quizz.questions.length; i++) {
-        starImage[i].setVisible(true);
-        starImage[i].alpha = 0.5;
-        starImage[i].tint = 0xffffff;
-    }
+    }   
 }
 
 function displayGameOver() {
@@ -205,10 +190,7 @@ function displayGameOver() {
     for (let i = 0; i < quizz.questions[0].answers.length; i++) {
         answerImage[i].setVisible(false);
         answerText[i].setVisible(false);
-    }
-    for (let i = 0; i < quizz.questions.length; i++) {
-        starImage[i].setVisible(false);
-    }
+    }    
 }
 
 function restartGame() {
