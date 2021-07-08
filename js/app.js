@@ -13,9 +13,7 @@ let config = {
     autoCenter: true
 };
 
-// changer titre du quizz
-// adapter les text dans les carre de reponce et de questions.
-// = changer de look
+// BUG - click deux fois a la fin du questionaire pour passer a la scene de fin! 
 
 let game = new Phaser.Game(config);
 let backgroundImage;
@@ -60,7 +58,7 @@ function preload() {
     this.load.image('labelquestion', './assets/Sprites/label1.png');
     this.load.image('labelanswer', './assets/Sprites/label2.png');
     this.load.image('play', './assets/Sprites/play.png');
-    
+
     this.load.json('questions', './assets/data/MyQuestions.json');
 
 
@@ -68,9 +66,9 @@ function preload() {
     this.load.image('menu', './assets/sprites/menu.png');
     this.load.image('restart', './assets/sprites/restart.png')
 
-    loadFont("FFFTusj","./assets/Fonts/FFF_Tusj.ttf");
-    loadFont("ArapeyReg","./assets/Fonts/arapey-regular.ttf");
-    loadFont("Desyrel","./assets/Fonts/desyrel.ttf");
+    loadFont("FFFTusj", "./assets/Fonts/FFF_Tusj.ttf");
+    loadFont("ArapeyReg", "./assets/Fonts/arapey-regular.ttf");
+    loadFont("Desyrel", "./assets/Fonts/desyrel.ttf");
 
 
 }
@@ -105,18 +103,18 @@ function create() {
 
     // quizz questions and answers
     questionImage = this.add.image(300, 100, 'labelquestion');
-    questionImage.setScale(0.5);
+    questionImage.setScale(0.7);
     questionImage.setVisible(false);
     for (let i = 0; i < quizz.questions[0].answers.length; i++) {
-        answerImage[i] = this.add.image(300, 220 + i * 110, 'labelanswer').setInteractive();
+        answerImage[i] = this.add.image(300, 220 + i * 115, 'labelanswer').setInteractive();
         answerImage[i].on('pointerdown', () => { checkAnswer(i) });
-        answerImage[i].setScale(1.0);
+        answerImage[i].setScale(1.7, 1.0);
         answerImage[i].setVisible(false);
     }
-    questionText = this.add.text(150, 80, quizz.questions[0].title, { fontFamily: 'ArapeyReg', fontSize: 18, color: ' #ffffff ' });
+    questionText = this.add.text(80, 60, quizz.questions[0].title, { fontFamily: 'ArapeyReg', fontSize: 20, color: ' #ffffff ' });
     questionText.setVisible(false);
     for (let i = 0; i < quizz.questions[0].answers.length; i++) {
-        answerText[i] = this.add.text(190, 210 + i * 110, quizz.questions[0].answers[i], { fontFamily: 'ArapeyReg', fontSize: 18, color: ' #000000' });
+        answerText[i] = this.add.text(100, 190 + i * 115, quizz.questions[0].answers[i], { fontFamily: 'ArapeyReg', fontSize: 18, color: ' #000000' });
         answerText[i].setVisible(false);
     }
 
@@ -125,22 +123,17 @@ function create() {
     playButtonImage.setScale(0.3);
     playButtonImage.setVisible(false); // playButtonImage.alpha = 0;
 
-    
-    
+
+
 }
 
 function update() { }
 
 function checkAnswer(answerIndex) {
-    if (answerIndex == quizz.questions[currentQuestionIndex].goodAnswerIndex) {
-        
-        
-        score++;
-    }
-    else {
-        
-      
-    }
+    if (answerIndex == 0) score++; // rep A = 1 
+    //if (answerIndex == 1) score ++; // rep B = 0
+    if (answerIndex == 2) score += 2;   // rep C 2 
+
     playButtonImage.setVisible(true);   // playButtonImage.alpha = 1;
     for (let i = 0; i < 3; i++) {
         answerImage[i].disableInteractive();
@@ -151,7 +144,7 @@ function checkAnswer(answerIndex) {
 
 function displayNextQuestion() {
     currentQuestionIndex++;
-    if (currentQuestionIndex == 10) {
+    if (currentQuestionIndex > quizz.questions.length) {
         displayGameOver();
     }
     else {
@@ -177,15 +170,24 @@ function displayGameScreen() {
     for (let i = 0; i < quizz.questions[0].answers.length; i++) {
         answerImage[i].setVisible(true);
         answerText[i].setVisible(true);
-    }   
+    }
 }
 
 function displayGameOver() {
     welcomeImage.setVisible(true);
     quizText.setVisible(true);
     welcomeText.setVisible(true);
-    welcomeText.text = "Vous avez un score de " + score + "/10 \nPresser le bouton pour recommencer.";
     restartImage.setVisible(true);
+
+    if (score > 45) {
+        welcomeText.text = "Votre score est de " + score + ".\nVous avez un score de plus de 45 points.\nVotre score indique que vous savez très bien gérer votre stress. Vous êtes très probablement perçu(e) comme quelqu’un de très détendu presque toujours capable de garder le sens des proportions. Cependant, cette prédisposition tout à fait appréciable ne doit pas vous empêcher de vous préparer aux situations stressantes qui ne manqueront pas de se présenter. Vous devriez arriver à gérer ces facteurs de stress imprévus en les anticipant. N’oubliez pas non plus que le stress peut être positif puisqu’il nous pousse à réagir et à nous dépasser.";
+    }
+    else if (score > 31) {
+        welcomeText.text = "Votre score est de " + score + ".\nVous avez un score de plus 31 points.";
+    }
+    else {
+        welcomeText.text = "Votre score est de " + score + ".\nVous avez un score de moins de 30 points.";
+    }
 
     playButtonImage.setVisible(false);
     questionImage.setVisible(false);
@@ -194,7 +196,7 @@ function displayGameOver() {
     for (let i = 0; i < quizz.questions[0].answers.length; i++) {
         answerImage[i].setVisible(false);
         answerText[i].setVisible(false);
-    }    
+    }
 }
 
 function restartGame() {
