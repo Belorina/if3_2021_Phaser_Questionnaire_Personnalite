@@ -180,7 +180,7 @@ function displayGameOver() {
     restartImage.setVisible(true);
 
     if (score > 45) {
-        welcomeText.text = "Votre score est de " + score + ".\nVous avez un score de plus de 45 points.\nVotre score indique que vous savez très bien gérer votre stress. Vous êtes très probablement perçu(e) comme quelqu’un de très détendu presque toujours capable de garder le sens des proportions. Cependant, cette prédisposition tout à fait appréciable ne doit pas vous empêcher de vous préparer aux situations stressantes qui ne manqueront pas de se présenter. Vous devriez arriver à gérer ces facteurs de stress imprévus en les anticipant. N’oubliez pas non plus que le stress peut être positif puisqu’il nous pousse à réagir et à nous dépasser.";
+        welcomeText.text = "Votre score est de " + score + ".\nVotre score indique que vous savez très bien gérer \nvotre stress. Vous êtes très probablement perçu(e) \ncomme quelqu’un de très détendu presque toujours \ncapable de garder le sens des proportions. \nCependant, cette prédisposition tout à fait appréciable\n ne doit pas vous empêcher de vous préparer aux \nsituations stressantes qui ne manqueront pas \nde se présenter. Vous devriez arriver à gérer \nces facteurs de stress imprévus en les anticipant. \nN’oubliez pas non plus que le stress peut être positif\n puisqu’il nous pousse à réagir et à nous dépasser.";
     }
     else if (score > 31) {
         welcomeText.text = "Votre score est de " + score + ".\nVous avez un score de plus 31 points.";
