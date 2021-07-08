@@ -13,6 +13,10 @@ let config = {
     autoCenter: true
 };
 
+// changer titre du quizz
+// adapter les text dans les carre de reponce et de questions.
+// = changer de look
+
 let game = new Phaser.Game(config);
 let backgroundImage;
 let answerImage = [];
